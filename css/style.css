@@ -36,6 +36,8 @@ body {
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
+    background-attachment: fixed;
+
 }
 .nav{
     --padding-container:0;
@@ -306,3 +308,26 @@ p > a:hover{
 .nav_logo {
     margin-top: 50px;
 }
+
+
+@media screen and (max-width: 1000px){
+    .nav_links {
+        display: none;
+    }
+    .nav_title {
+        display: none;
+    }
+    .knowledge {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .knowledge_paragraph {
+        width: 90%;
+
+    }
+    .knowledge_img {
+        width: 90%;
+    }
+ }
